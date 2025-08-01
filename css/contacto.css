@@ -1,0 +1,114 @@
+/* Estilos generales de la página de contacto */
+#contacto {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1c31a5;
+    margin-bottom: 20px;
+}
+
+.descripcion-contacto {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.informacion-contacto {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.informacion-contacto h3 {
+    font-size: 2rem;
+    color: #1c31a5;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.informacion-contacto p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.redes-sociales a {
+    color: #1c31a5;
+    font-size: 2.5rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+    color: #121866;
+}
+
+/* Estilos del formulario de contacto */
+.formulario-contacto {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto h3 {
+    font-size: 2rem;
+    color: #1c31a5;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.formulario-contacto input, .formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.formulario-contacto button {
+    background-color: #1c31a5;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #121866;
+}
+
+@media (max-width: 768px) {
+    .contenedor-contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacion-contacto, .formulario-contacto {
+        width: 90%;
+    }
+}

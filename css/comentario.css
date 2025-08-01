@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-comentarios {
+    margin-bottom: 1.5rem; /* Espacio debajo del título */
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem; /* Tamaño más llamativo */
+    color: #ffffff; /* Texto blanco */
+    background-color: #161f85; /* Fondo azul elegante */
+    padding: 1rem 2rem; /* Espaciado interno */
+    border-radius: 12px; /* Bordes redondeados */
+    text-align: center; /* Centrar texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+
+.contenedor-comentarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columna adaptativa */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrado */
+    padding: 0 20px;
+}
+
+.comentario {
+    background-color: #f9f9f9; /* Fondo muy suave */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra muy sutil */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+.comentario:hover {
+    transform: translateY(-5px); /* Efecto de elevar el comentario */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra más destacada al pasar el mouse */
+}
+
+.comentario p {
+    font-size: 1rem; /* Tamaño pequeño y legible */
+    color: #555; /* Gris suave para el texto */
+    font-style: italic;
+    margin-bottom: 10px; /* Espacio entre el comentario y el nombre */
+}
+
+.comentario span {
+    font-size: 0.9rem; /* Nombre más pequeño */
+    color: #777; /* Gris más claro para el nombre */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.frase1{
+    font-size: 100px;
+    padding: 15px;
+    margin-top: 35px;
+    color: #1c31a5;
+    text-align: center;
+    font-family: 'Anton SC', sans-serif;
+}

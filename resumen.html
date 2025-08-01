@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen del Carrito</title>
+    <style>
+        .item-resumen {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .item-resumen img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resumen del Carrito</h1>
+    <div id="contenedor-resumen"></div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const carritoData = JSON.parse(localStorage.getItem('carrito'));
+    const contenedorResumen = document.getElementById('contenedor-resumen');
+
+    if (carritoData && carritoData.length > 0) {
+        carritoData.forEach(item => {
+            const itemHTML = `
+                <div class="item-resumen">
+                    <img src="${item.imagen}" width="80px" alt="">
+                    <div>
+                        <h3>${item.titulo}</h3>
+                        <p>Cantidad: ${item.cantidad}</p>
+                        <p>Precio: ${item.precio}</p>
+                    </div>
+                </div>
+            `;
+            contenedorResumen.innerHTML += itemHTML;
+        });
+    } else {
+        contenedorResumen.innerHTML = '<p>No hay elementos en el carrito.</p>';
+    }
+});
+
+</script>
+</html>

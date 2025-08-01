@@ -1,0 +1,129 @@
+ body {
+            font-family: 'Hind', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        #content {
+        }
+
+        #modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mini-window {
+            position: relative;
+            width: 320px;
+            height: 480px; /* Ajustar altura para acomodar todo el contenido */
+            background-color: #101f78; /* Fondo de la ventana emergente */
+            border: 10px solid #010937; /* Margen de la ventana emergente */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-100%);
+            transition: transform 0.5s ease-out;
+            font-family: 'Anton SC', sans-serif; /* Fuente del modal */
+            z-index: 1; /* Asegura que el texto esté encima de la imagen */
+
+        }
+
+        #mini-window.show {
+            transform: translateY(0);
+        }
+
+        #close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: white; /* Botón de salida */
+            border-radius: 30%;
+        }
+
+        #close-btn:hover{
+            background-color: #010937;
+        }
+
+        #circle {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: gold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px; /* Añadir margen inferior */
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #request-prize-btn {
+            font-family: 'Anton SC', sans-serif;
+            display: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #1c31a5; /* Botón del premio */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #request-prize-btn:hover{
+            background-color:#010937;
+        }
+
+        #request-prize-btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        #no-prize {
+            margin-top: 20px;
+            cursor: pointer;
+            color: white; /* Color del texto "No quiero mi regalo" */
+            font-family: 'Hind', sans-serif; /* Fuente Hind */
+        }
+
+        #no-prize:hover {
+            text-decoration:underline ; /* Cambia el color al pasar el cursor */
+            transform: scale(1.1); /* Hace que el texto se agrande ligeramente */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Agrega sombra */
+        }
+
+        #contenedorTextoEmergente {
+            justify-content: center;
+            text-align: center;
+            color: white; /* Color del texto emergente */
+            margin-top: 3px;
+        }

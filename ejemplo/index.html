@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Navegación</title>
+</head>
+<body>
+    <?php
+    session_start();
+
+    $server = "localhost";
+    $user = "root"; // Cambia según tu configuración
+    $pass = "";
+    $db = "chente";
+
+    // Conexión a la base de datos
+    $conexion = new mysqli($server, $user, $pass, $db);
+
+    if ($conexion->connect_error) {
+        die("Error en la conexión: " . $conexion->connect_error);
+    }
+
+    $logged_in_user = null;
+
+    // Verificar si hay usuario logeado
+    if (isset($_SESSION['usuario'])) {
+        $usuario = $_SESSION['usuario'];
+
+        $sql = "SELECT Logeado FROM usuarios WHERE Usuario = ?";
+        $stmt = $conexion->prepare($sql);
+        $stmt->bind_param("s", $usuario);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            if ($row['Logeado'] == true) {
+                $logged_in_user = $usuario;
+            }
+        }
+        $stmt->close();
+    }
+
+    $conexion->close();
+    ?>
+
+    <h1>Bienvenido</h1>
+
+    <?php if ($logged_in_user): ?>
+        <div style="background-color: #f0f0f0; padding: 10px; margin-bottom: 20px;">
+            <p>Usuario logeado: <strong><?php echo htmlspecialchars($logged_in_user); ?></strong></p>
+            <form action="logout.php" method="POST" style="display: inline;">
+                <button type="submit">Cerrar Sesión</button>
+            </form>
+        </div>
+    <?php else: ?>
+        <!-- Botones de navegación -->
+        <button onclick="location.href='login.html'">Ingresa</button>
+        <button onclick="location.href='crearCuenta.html'">Crear Cuenta</button>
+    <?php endif; ?>
+
+    <button onclick="location.href='cart.html'">Carrito</button>
+</body>
+</html>

@@ -1,0 +1,170 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #1c31a5;
+    padding: 0px 0px; 
+}
+
+.logo {
+    width: 120px; 
+    height: 120px;
+    object-fit: cover; 
+    margin-right: 20px;
+}
+
+h1 {
+    flex-grow: 1;
+    font-family: 'Anton SC', sans-serif;
+    font-size: 48px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+h1 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease, transform 0.3s ease; /* Agrega transición para color y transformación */
+}
+
+h1 a:hover {
+    color: #c2c1d7; 
+    transform: scale(2.4);
+}
+
+.contactanos {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0px 0px; 
+}
+
+.contactanos a {
+    text-decoration: none; 
+    margin: 0 15px;
+    font-family: 'Anton SC', sans-serif;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Transición para cambio de fondo */
+}
+
+.contactanos a:hover {
+    color: #f3f3f3; /* Cambia el color al pasar el cursor */
+    transform: scale(1.4); /* Aumenta el tamaño un poco */
+    background-color: #4e74dc; /* Color de fondo al hacer hover */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.slogan-container {
+    position: relative; /* Necesario para colocar el texto sobre la imagen */
+    height: 400px; /* Ajusta el tamaño de acuerdo con el fondo */
+    width: 100%;
+}
+
+.slogan-image {
+    position: absolute; /* Posiciona la imagen sobre el contenedor */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+    filter: brightness(50%); /* Aplica el filtro solo a la imagen */
+}
+
+.unirte {
+    position: absolute; /* Coloca el texto sobre la imagen */
+    color: white;
+    font-size: 95px;
+    font-family: 'Anton SC', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la visibilidad */
+    z-index: 0; /* Asegura que el texto esté encima de la imagen */
+    top: 50%; /* Centra el texto verticalmente */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centrar exactamente el texto */
+    margin-top: -280px;
+}
+
+.carousel-inner .carousel-item img {
+    width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
+    height: 630px; /* Establece la altura de las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-row {
+    margin-top: 9px;
+    display: flex;
+    justify-content: center;
+    background-color: #1c31a5;
+    gap: 10px;
+    width: 100%;
+}
+
+.anuncio-pedir{
+    text-align: center;
+    background-color: #1c31a5;
+    margin: -2px;
+    padding-top: 40px;
+    font-family: 'Anton SC', sans-serif;
+    color: #f1ecea;
+}
+
+.carousel-bebidas {
+    padding: 500px; /*no ocupa el total de ancho de nuestra pagina*/
+    padding-top: 20px;
+    width: 80%; /* Ocupa el 80% del ancho del contenedor */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    height: 200px; /* Establece la altura de las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+    background-color: #404144;
+}
+
+.carousel-bebidas .carousel-item img {
+    width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
+    height: 320px; /* Establece la altura de las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+}
+
+.carousel-row img {
+    width: 100%; /* Ajusta el ancho para que las 3 imágenes quepan */
+    height: 500px; /* Establece la altura de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes se ajusten sin distorsión */
+}
+
+/* Cambiar el color del texto en las leyendas */
+.carrusel-bebidas-caption h5 {
+    color: #fffefe; /* El color del título */
+}
+
+.carrusel-bebidas-caption p {
+    color: #ffd700; /* El color de la descripción */
+}
+
+/* Cambiar el color de los controles de navegación */
+.carousel-control-prev, 
+.carousel-control-next {
+    color: #f1ecea; /* Cambia el color de los botones */
+    margin-bottom: 280px;
+    margin-inline: 160px;
+}
+
+.carousel-bebidas {
+    width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
+    height: 630px; /* Establece la altura de las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+}
+
+
+form{
+    padding: 200px;
+}

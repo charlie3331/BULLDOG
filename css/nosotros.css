@@ -1,0 +1,247 @@
+/* Importar Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Sección general */
+.seccion-menu {
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+/* Títulos */
+.titulo-seccion {
+    font-size: 38px; /* Más grande */
+    font-weight: 700;
+    color: #1c31a5;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Frase llamativa */
+.frase-destacada {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0;
+    color: #1c31a5;
+    letter-spacing: 1px;
+}
+
+.frase-destacada span {
+    color: #555;
+    font-weight: 300;
+}
+
+/* Contenedor principal */
+.contenedor-sobre-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.texto-nosotros {
+    flex: 1 1 400px;
+    font-size: 20px; /* Letra más grande */
+    line-height: 1.8;
+    color: #555;
+}
+
+.texto-nosotros h3 {
+    font-size: 32px;
+    color: #1c31a5;
+    margin-bottom: 20px;
+}
+
+.imagen-nosotros img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Valores */
+.valores {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.valores h3 {
+    font-size: 32px;
+    color: #1c31a5;
+    margin-bottom: 20px;
+}
+
+.contenedor-valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.valor {
+    flex: 1 1 300px;
+    background: #f4f4f4;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.valor h4 {
+    font-size: 22px; /* Más grande */
+    color: #1c31a5;
+    margin-bottom: 10px;
+}
+
+.valor p {
+    font-size: 18px; /* Más grande */
+    color: #555;
+}
+
+/* Eventos */
+.eventos {
+    margin-bottom: 40px;
+}
+
+.eventos h3 {
+    font-size: 32px;
+    color: #1c31a5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-eventos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.evento {
+    flex: 1 1 300px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.evento img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #1c31a5;
+}
+
+.evento h4 {
+    font-size: 22px;
+    color: #1c31a5;
+    margin: 15px 0;
+}
+
+.evento p {
+    font-size: 18px;
+    color: #555;
+    padding: 0 10px 20px;
+}
+
+.evento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Galería */
+.galeria {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.galeria h3 {
+    font-size: 32px;
+    color: #1c31a5;
+    margin-bottom: 20px;
+}
+
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.contenedor-galeria img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contenedor-galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    .texto-nosotros {
+        text-align: center;
+    }
+
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+    }
+
+    .valor {
+        flex: 1 1 100%;
+    }
+
+    .evento {
+        flex: 1 1 100%;
+    }
+}
+
+.evento {
+    flex: 1 1 300px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.evento img {
+    width: 100%;  /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 200px; /* Asigna una altura fija a las imágenes */
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente para llenar el espacio sin deformarse */
+    border-bottom: 2px solid #1c31a5;
+}
+
+.evento h4 {
+    font-size: 22px;
+    color: #1c31a5;
+    margin: 15px 0;
+}
+
+.evento p {
+    font-size: 18px;
+    color: #555;
+    padding: 0 10px 20px;
+}
+
+.evento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Hind:wght@400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/whats.css">
+    <link rel="stylesheet" href="css/letras.css">
+    <script src="js/app.js" async></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="imagenes/srpersonalizador.png" alt="Logo" class="logo" id="logo">
+        </a>
+        <ul class="contactanos">
+            <a href="menu.html">MENU</a>
+            <a href="nosotros.html">SOBRE NOSOTROS</a>
+        </ul>
+        <h1><a href="index.html">BULLDOG</a></h1>
+        <ul class="contactanos">
+            <a href="index.html">INICIO</a>
+            <a href="contacto.html">CONTACTANOS</a>
+            <!--<a href="inicio_sesion.html">TU CUENTA</a> -->
+            
+        </ul>
+    </header>
+
+
+    <div id="icono-carrito">
+        🛒
+    </div>
+
+    <div class="carrito" id="carrito">
+        <div class="header-carrito">
+            <h2>Tu Carrito</h2>
+            <button id="cerrar-carrito" class="btn-cerrar">
+                &#10005; 
+            </button>
+        </div>
+
+        <div class="carrito-items">
+
+        </div>
+
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Total</strong>
+                <span class="carrito-precio-total">
+                    $0,00
+                </span>
+            </div>
+            <div class="descuento">
+                <input type="text" id="input-descuento" placeholder="Código de descuento" class="input-descuento" />
+                <button id="aplicar-descuento" class="btn-aplicar-descuento">
+                    Aplicar
+                </button>
+            </div>
+            <div id="mensaje-descuento" class="mensaje-descuento"></div>
+            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+        </div>
+    </div>
+
+    <div id="whatsapp-float" class="whatsapp-float">
+        <a href="https://wa.me/524499284869" target="_blank" aria-label="WhatsApp">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+    </div>
+
+    <section class="menu-principal">
+        <h2 class="titulo-menu">Explora Nuestro Menú</h2>
+        <div class="categorias-menu">
+            <a href="#cocteles" class="categoria-titulo-item">
+                <div class="icono-categoria">🍹</div>
+                <p>Cócteles</p>
+            </a>
+            <a href="#botellas" class="categoria-titulo-item">
+                <div class="icono-categoria">🍾</div>
+                <p>Botellas</p>
+            </a>
+            <a href="#mezcalitas" class="categoria-titulo-item">
+                <div class="icono-categoria">🥃</div>
+                <p>Mezcalitas</p>
+            </a>
+            <a href="#cervezas" class="categoria-titulo-item">
+                <div class="icono-categoria">🍺</div>
+                <p>Cervezas</p>
+            </a>
+            <a href="#comida" class="categoria-titulo-item">
+                <div class="icono-categoria">🍔</div>
+                <p>Comida</p>
+            </a>
+            <a href="#sin-alcohol" class="categoria-titulo-item">
+                <div class="icono-categoria">🥤</div>
+                <p>Sin Alcohol</p>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="contenedor">
+
+        <!-- Sección Coctelería Clásica -->
+        <section id="cocteleria-clasica" class="seccion-menu">
+            <h3 class="titulo-seccion">Coctelería Clásica</h3>
+
+            <!-- Cócteles Clásicos -->
+            <h4 class="subtitulo-seccion">Cócteles Clásicos</h4>
+            <div class="titulo-items-menu">
+                <div class="item">
+                    <span class="titulo-item">Moscow Mule</span>
+                    <img src="imagenes/MENU/cocteles/image copy.png" class="img-item">
+                    <span class="precio-item">$150</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Negroni</span>
+                    <img src="imagenes/MENU/cocteles/negroni.png" class="img-item">
+                    <span class="precio-item">$150</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Manhattan</span>
+                    <img src="imagenes/MENU/cocteles/man.png" class="img-item">
+                    <span class="precio-item">$130</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Daiquiri de Fresa</span>
+                    <img src="imagenes/MENU/cocteles/fresa.png" class="img-item">
+                    <span class="precio-item">$130</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Daiquiri de Mango</span>
+                    <img src="imagenes/MENU/cocteles/mango.png" class="img-item">
+                    <span class="precio-item">$130</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Margaritas -->
+            <h4 class="subtitulo-seccion">Margaritas</h4>
+            <div class="titulo-items-menu">
+                <div class="item">
+                    <span class="titulo-item">Margarita</span>
+                    <img src="imagenes/MENU/cocteles/marga.png" class="img-item">
+                    <span class="precio-item">$130</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Margarita de Piña y Chile</span>
+                    <img src="imagenes/MENU/cocteles/margach.png" class="img-item">
+                    <span class="precio-item">$130</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Margarita de Frutos</span>
+                    <img src="imagenes/MENU/cocteles/margafr.png" class="img-item">
+                    <span class="precio-item">$130</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Margarita de Cerveza</span>
+                    <img src="imagenes/MENU/cocteles/margace.png" class="img-item">
+                    <span class="precio-item">$130</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Mojitos y Martinis -->
+            <h4 class="subtitulo-seccion">Mojitos y Martinis</h4>
+            <div class="titulo-items-menu">
+                <div class="item">
+                    <span class="titulo-item">Mojito de Frutos Rojos</span>
+                    <img src="imagenes/MENU/cocteles/mofr.png" class="img-item">
+                    <span class="precio-item">$90</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Mojito de Maracuyá</span>
+                    <img src="imagenes/MENU/cocteles/moma.png" class="img-item">
+                    <span class="precio-item">$90</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Mojito Natural</span>
+                    <img src="imagenes/MENU/cocteles/mojito.png" class="img-item">
+                    <span class="precio-item">$80</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Martini Dulce</span>
+                    <img src="imagenes/MENU/cocteles/martini.png" alt="Martini Dulce" class="img-item">
+                    <span class="precio-item">$160</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Martini Seco</span>
+                    <img src="imagenes/MENU/cocteles/marsec.png" alt="Martini Seco" class="img-item">
+                    <span class="precio-item">$150</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Coctelería Urbana -->
+        <section id="cocteleria-urbana" class="seccion-menu">
+            <h3 class="titulo-seccion">Coctelería Urbana</h3>
+            <div class="titulo-items-menu">
+                <div class="item">
+                    <span class="titulo-item">Mango Ice</span>
+                    <img src="imagenes/MENU/cocteles/mangoi.png" alt="Mango Ice" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Tropical Rainbow</span>
+                    <img src="imagenes/MENU/cocteles/tropical.png" alt="Tropical Rainbow" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Can Peach</span>
+                    <img src="imagenes/MENU/cocteles/peach.png" alt="Can Peach" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Strawberry Cherry</span>
+                    <img src="imagenes/MENU/cocteles/fresa1.png" alt="Strawberry Cherry" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Blue Razz (Azulito)</span>
+                    <img src="imagenes/MENU/cocteles/azul.png" alt="Blue Razz" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Mexico Mango</span>
+                    <img src="imagenes/MENU/cocteles/mangom.png" alt="Mexico Mango" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Strawberry Burst</span>
+                    <img src="imagenes/MENU/cocteles/6.png" alt="Strawberry Burst" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">The Menage</span>
+                    <img src="imagenes/MENU/cocteles/7.png" alt="The Menage" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Ultra Strawberry</span>
+                    <img src="imagenes/MENU/cocteles/ff.png" alt="Ultra Strawberry" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Strawberry ShortCake</span>
+                    <img src="imagenes/MENU/cocteles/stea.png" alt="Strawberry ShortCake" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Juicy Peach</span>
+                    <img src="imagenes/MENU/cocteles/nar.png" alt="Juicy Peach" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Blueberry Splash</span>
+                    <img src="imagenes/MENU/cocteles/berry.png" alt="Blueberry Splash" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Strawberry Ice</span>
+                    <img src="imagenes/MENU/cocteles/5.png" alt="Strawberry Ice" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Torangy</span>
+                    <img src="imagenes/MENU/cocteles/4.png" alt="Torangy" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Liquid Gold</span>
+                    <img src="imagenes/MENU/cocteles/gold.png" alt="Liquid Gold" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Fresh Kiss</span>
+                    <img src="imagenes/MENU/cocteles/2.png" alt="Fresh Kiss" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Cubanito</span>
+                    <img src="imagenes/MENU/cocteles/cuba.png" alt="Cubanito" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Ronchata</span>
+                    <img src="imagenes/MENU/cocteles/ron.png" alt="Ronchata" class="img-item">
+                    <span class="precio-item">L $130 | 1/2 $70 | Copa $50</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Coctelería de Autor -->
+        <section id="cocteleria-autor" class="seccion-menu">
+            <h3 class="titulo-seccion">Coctelería de Autor</h3>
+            <div class="titulo-items-menu">
+                <div class="item">
+                    <span class="titulo-item">Romance</span>
+                    <img src="imagenes/MENU/cocteles/romance.png" alt="Romance" class="img-item">
+                    <span class="precio-item">$100</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Mondey</span>
+                    <img src="imagenes/MENU/cocteles/monday.png" alt="Mondey" class="img-item">
+                    <span class="precio-item">$100</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Ramaah</span>
+                    <img src="imagenes/MENU/cocteles/rama.png" alt="Ramaah" class="img-item">
+                    <span class="precio-item">$100</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Sunset</span>
+                    <img src="imagenes/MENU/cocteles/suns.png" alt="Sunset" class="img-item">
+                    <span class="precio-item">$100</span>
+                    <button class="boton-item">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Sección Botellas -->
+        <section id="botellas" class="seccion-menu">
+            <h3 class="titulo-seccion">Botellas</h3>
+
+            <!-- Tequilas -->
+            <h4 class="subtitulo-seccion">Tequilas</h4>
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Don Julio 70</span>
+                    <img src="imagenes/MENU/botellas/70.png" alt="Don Julio 70" class="img-item">
+                    <p>Copa $140 | Botella (700ml) $1400</p>
+                    <span class="precio-item">$140</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Herradura Reposado</span>
+                    <img src="imagenes/MENU/botellas/herradura.png" alt="Herradura Reposado" class="img-item">
+                    <p>Copa $110 | Botella (750ml) $1200</p>
+                    <span class="precio-item">$110</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Centenario Reposado</span>
+                    <img src="imagenes/MENU/botellas/cente.png" alt="Centenario Reposado" class="img-item">
+                    <p>Copa $90 | Botella (750ml) $800</p>
+                    <span class="precio-item">$90</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Maestro Dobel</span>
+                    <img src="imagenes/MENU/botellas/maestro.png" alt="Maestro Dobel" class="img-item">
+                    <p>Copa $130 | Botella (750ml) $1200</p>
+                    <span class="precio-item">$130</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Ron -->
+            <h4 class="subtitulo-seccion">Ron</h4>
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Havana Club 7</span>
+                    <img src="imagenes/MENU/botellas/7.png" alt="Havana Club 7" class="img-item">
+                    <p>Copa $90 | Botella (700ml) $850</p>
+                    <span class="precio-item">$90</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Matusalem</span>
+                    <img src="imagenes/MENU/botellas/mus.png" alt="Matusalem" class="img-item">
+                    <p>Copa $70 | Botella (750ml) $750</p>
+                    <span class="precio-item">$70</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Bacardí Mango</span>
+                    <img src="imagenes/MENU/botellas/añejo.png" alt="Bacardí Añejo" class="img-item">
+                    <p>Copa $85 | Botella (750ml) $699</p>
+                    <span class="precio-item">$85</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Vodka -->
+            <h4 class="subtitulo-seccion">Vodka</h4>
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Hpnotiq</span>
+                    <img src="imagenes/MENU/botellas/hq.png" alt="Hpnotiq" class="img-item">
+                    <p>Copa $120 | Botella (750ml) $1200</p>
+                    <span class="precio-item">$120</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Absolut Mango</span>
+                    <img src="imagenes/MENU/botellas/image.png" alt="Absolut Mango" class="img-item">
+                    <p>Copa $90 | Botella (750ml) $750</p>
+                    <span class="precio-item">$90</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Smirnoff</span>
+                    <img src="imagenes/MENU/botellas/image copy 2.png" alt="Smirnoff" class="img-item">
+                    <p>Copa $70 | Botella (750ml) $700</p>
+                    <span class="precio-item">$70</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Whisky -->
+            <h4 class="subtitulo-seccion">Whisky</h4>
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Johnnie Etiqueta Negra</span>
+                    <img src="imagenes/MENU/botellas/negra.png" alt="Johnnie Etiqueta Negra" class="img-item">
+                    <p>Copa $140 | Botella (750ml) $1400</p>
+                    <span class="precio-item">$140</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Buchanan's 12</span>
+                    <img src="imagenes/MENU/botellas/buca.png" alt="Buchanan's 12" class="img-item">
+                    <p>Copa $120 | Botella (750ml) $1200</p>
+                    <span class="precio-item">$120</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Jack Daniels</span>
+                    <img src="imagenes/MENU/botellas/jack.png" alt="Jack Daniels" class="img-item">
+                    <p>Copa $110 | Botella (700ml) $1000</p>
+                    <span class="precio-item">$110</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Gin -->
+            <h4 class="subtitulo-seccion">Gin</h4>
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Beefeater Pink</span>
+                    <img src="imagenes/MENU/botellas/rosa.png" alt="Beefeater Pink" class="img-item">
+                    <p>Copa $100 | Botella (700ml) $950</p>
+                    <span class="precio-item">$100</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Tanqueray London</span>
+                    <img src="imagenes/MENU/botellas/london.png
+                    " alt="Tanqueray London" class="img-item">
+                    <p>Copa $110 | Botella (750ml) $950</p>
+                    <span class="precio-item">$110</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Champagne -->
+            <h4 class="subtitulo-seccion">Champagne</h4>
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Moet Brut</span>
+                    <img src="imagenes/MENU/botellas/moet.png" alt="Moet Brut" class="img-item">
+                    <p>Botella $2000</p>
+                    <span class="precio-item">$2000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Blue Champagne</span>
+                    <img src="imagenes/MENU/botellas/blue.png" alt="Blue Champagne" class="img-item">
+                    <p>Botella $700</p>
+                    <span class="precio-item">$700</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Brandy -->
+            <h4 class="subtitulo-seccion">Brandy</h4>
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Torres 10</span>
+                    <img src="imagenes/MENU/botellas/10.png" alt="Torres 10" class="img-item">
+                    <p>Copa $90 | Botella (700ml) $800</p>
+                    <span class="precio-item">$90</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Don Pedro</span>
+                    <img src="imagenes/MENU/botellas/pedro.png" alt="Don Pedro" class="img-item">
+                    <p>Copa $100 | Botella (1L) $700</p>
+                    <span class="precio-item">$100</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Mezcal -->
+            <h4 class="subtitulo-seccion">Mezcal</h4>
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Montelobos</span>
+                    <img src="imagenes/MENU/botellas/monte.png" alt="Montelobos" class="img-item">
+                    <p>Copa $120 | Botella (750ml) $11200</p>
+                    <span class="precio-item">$120</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">400 Conejos Joven</span>
+                    <img src="imagenes/MENU/botellas/400.png" alt="400 Conejos Joven" class="img-item">
+                    <p>Copa $110 | Botella (700ml) $1000</p>
+                    <span class="precio-item">$110</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="comida" class="seccion-menu">
+            <h2 class="titulo-seccion">Comida</h2>
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Papas Reja</span>
+                    <img src="imagenes/MENU/comida/papas.png" alt="Papas Reja" class="img-item">
+                    <p>Porción de 160 gramos, crujientes y deliciosas.</p>
+                    <span class="precio-item">$80</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Maruchan</span>
+                    <img src="imagenes/MENU/comida/maruchan.png" alt="Maruchan" class="img-item">
+                    <p>Sopa instantánea caliente, ideal para un antojo rápido.</p>
+                    <span class="precio-item">$40</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Nachos</span>
+                    <img src="imagenes/MENU/comida/nachos.png" alt="Nachos" class="img-item">
+                    <p>Con queso fundido y jalapeños.</p>
+                    <span class="precio-item">$80</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Boneless</span>
+                    <img src="imagenes/MENU/comida/image.png" alt="Boneless" class="img-item">
+                    <p>Porción de 160 gramos de pollo deshuesado y jugoso.</p>
+                    <span class="precio-item">$80</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Nuggets</span>
+                    <img src="imagenes/MENU/comida/nuggets.png" alt="Nuggets" class="img-item">
+                    <p>160 gramos de deliciosos bocados de pollo empanizados.</p>
+                    <span class="precio-item">$80</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="mezcalitas" class="seccion-menu">
+            <h2 class="titulo-seccion">Mezcalitas</h2>
+            <p class="descripcion-mezcalitas">Precio-items: L $130 | 1/2 $70 | Copa $50</p>
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Mezcal Manzana Verde</span>
+                    <img src="imagenes/MENU/mezcales/image.png" alt="Mezcal Chicle Azul" class="img-item">
+                    <p>Sabor divertido y dulce, ideal para cualquier ocasión.</p>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Mezcal Frutos Rojos</span>
+                    <img src="imagenes/MENU/mezcales/frutos.png" alt="Mezcal Frutos Rojos" class="img-item">
+                    <p>Una explosión de sabores de frutas frescas.</p>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Mezcal Fresa Kiwi</span>
+                    <img src="imagenes/MENU/mezcales/fresa.png" alt="Mezcal Fresa Kiwi" class="img-item">
+                    <p>Combinación refrescante y exótica de fresa y kiwi.</p>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Mezcal Maracuyá</span>
+                    <img src="imagenes/MENU/mezcales/mara.png" alt="Mezcal Maracuyá" class="img-item">
+                    <p>Notas tropicales con el inconfundible sabor del maracuyá.</p>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Mezcal Mora Azul</span>
+                    <img src="imagenes/MENU/mezcales/mora.png" alt="Mezcal Mora Azul" class="img-item">
+                    <p>Sabor vibrante y ligeramente dulce.</p>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="cervezas" class="seccion-menu">
+            <h2 class="titulo-seccion">Cervezas</h2>
+            <h3 class="subtitulo-seccion">Cervezas Comunes</h3>
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Amster Ultra</span>
+                    <img src="imagenes/MENU/cerveza/ultra.png" alt="Amster Ultra" class="img-item">
+                    <p>Cerveza ligera, refrescante y perfecta para cualquier ocasión.</p>
+                    <span class="precio-item">$35 (355ml)</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">XX Ambar</span>
+                    <img src="imagenes/MENU/cerveza/xx.png" alt="XX Ambar" class="img-item">
+                    <p>Cerveza con un cuerpo robusto y sabor profundo.</p>
+                    <span class="precio-item">$35 (325ml)</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">XX Lager</span>
+                    <img src="imagenes/MENU/cerveza/xxl.png" alt="XX Lager" class="img-item">
+                    <p>Una cerveza equilibrada y refrescante.</p>
+                    <span class="precio-item">$35 (325ml)</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Carta Blanca</span>
+                    <img src="imagenes/MENU/cerveza/blanca.png" alt="Carta Blanca" class="img-item">
+                    <p>Una cerveza clásica y ligera para disfrutar cualquier momento.</p>
+                    <span class="precio-item">$35 (325ml)</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+
+                <section id="caguamas" class="seccion-menu">
+                    <h3 class="titulo-seccion">Caguamas</h3>
+                    <div class="contenedor-items">
+                        <div class="item">
+                            <span class="titulo-item">Miller High</span>
+                            <img src="imagenes/MENU/cerveza/miller.png" alt="Miller High" class="img-item">
+                            <p>Caguama de 940ml, refrescante y ligera.</p>
+                            <span class="precio-item">$80 (940ml)</span>
+                            <button class="boton-item">Agregar al Carrito</button>
+                        </div>
+                        <div class="item">
+                            <span class="titulo-item">XX Ambar</span>
+                            <img src="imagenes/MENU/cerveza/xxc.png" alt="XX Ambar Caguama" class="img-item">
+                            <p>De sabor robusto y único.</p>
+                            <span class="precio-item">$80 (1180ml)</span>
+                            <button class="boton-item">Agregar al Carrito</button>
+                        </div>
+                        <div class="item">
+                            <span class="titulo-item">XX Lager</span>
+                            <img src="imagenes/MENU/cerveza/cclc.png" alt="XX Lager Caguama" class="img-item">
+                            <p>Una caguama refrescante y equilibrada.</p>
+                            <span class="precio-item">$80 (1000ml)</span>
+                            <button class="boton-item">Agregar al Carrito</button>
+                        </div>
+                        <div class="item">
+                            <span class="titulo-item">Grand Heineken</span>
+                            <img src="imagenes/MENU/cerveza/image.png" alt="Grand Heineken" class="img-item">
+                            <p>Caguama de Heineken, sabor premium.</p>
+                            <span class="precio-item">$80 (940ml)</span>
+                            <button class="boton-item">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+        <section id="sin-alcohol" class="seccion-menu">
+            <h2 class="titulo-seccion">Sin Alcohol</h2>
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Coca Cola</span>
+                    <img src="image.png" class="img-item">
+                    <p>Clásica y refrescante.</p>
+                    <span class="precio-item">$30</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Coca sin Azúcar</span>
+                    <img src="imagenes/MENU/snalchol/image.png" alt="Coca sin Azúcar" class="img-item">
+                    <p>La misma frescura sin azúcar añadida.</p>
+                    <span class="precio-item">$30</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Agua Mineral</span>
+                    <img src="imagenes/MENU/snalchol/topo.png" alt="Agua Mineral" class="img-item">
+                    <p>Una opción ligera y burbujeante.</p>
+                    <span class="precio-item">$30</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Squirt</span>
+                    <img src="imagenes/MENU/snalchol/squirt.png" alt="Squirt" class="img-item">
+                    <p>Refrescante y cítrica, perfecta para combinar.</p>
+                    <span class="precio-item">$30</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Limonada</span>
+                    <img src="imagenes/MENU/snalchol/image copy.png" alt="Limonada" class="img-item">
+                    <span class="precio-item">$40</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Naranjada</span>
+                    <img src="imagenes/MENU/snalchol/naranja.png" alt="Naranjada" class="img-item">
+                    <span class="precio-item">$40</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Piñada</span>
+                    <img src="imagenes/MENU/snalchol/image copy 2.png" alt="Piñada" class="img-item">
+                    <span class="precio-item">$50</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Agua de Horchata</span>
+                    <img src="imagenes/MENU/snalchol/image copy 3.png" alt="Agua de Horchata" class="img-item">
+                    <span class="precio-item">$50</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <section class="formato_Footer">
+                <div class="payment-section text-center my-4">
+                    <hr>
+                    <h2>Métodos de Pago</h2>
+                    <hr>
+                    <div class="payment-methods">
+                        <img src="imagenes/MetodosDePago/americanExpress.png" alt="Método de Pago: American Express"
+                            class="payment-image">
+                        <img src="imagenes/MetodosDePago/Mastercard-logo.png" alt="Método de Pago: Mastercard"
+                            class="payment-image">
+                        <img src="imagenes/MetodosDePago/Paypal_logo.png" alt="Método de Pago: PayPal"
+                            class="payment-image">
+                        <img src="imagenes/MetodosDePago/visa.png" alt="Método de Pago: Visa" class="payment-image">
+                    </div>
+                </div>
+
+                <div class="container-fluid my-5 footer-container">
+                    <div class="social-section d-flex justify-content-between">
+                        <span>Síguenos en redes sociales:</span>
+                        <div>
+                            <a href="https://www.facebook.com/BULLDOGBar/" target="_blank" aria-label="Facebook"><i
+                                    class="bx bxl-facebook"></i></a>
+                            <a href="https://x.com/BULLDOGBar" target="_blank" aria-label="Twitter"><i
+                                    class="bx bxl-twitter"></i></a>
+                            <a href="https://www.instagram.com/BULLDOGBar/" target="_blank" aria-label="Instagram"><i
+                                    class="bx bxl-instagram"></i></a>
+                            <a href="https://www.youtube.com/user/BULLDOGBar" target="_blank" aria-label="YouTube"><i
+                                    class="bx bxl-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-main">
+                        <div class="footer-columns">
+                            <div>
+                                <h6>Atención al Cliente</h6>
+                                <hr />
+                                <p><a href="contacto.html">Contacto</a></p>
+                                <p><a href="faq.html">Preguntas Frecuentes</a></p>
+                                <p><a href="reservaciones.html">Reservaciones</a></p>
+                            </div>
+                            <div>
+                                <h6>Acerca de BULLDOG</h6>
+                                <hr />
+                                <p><a href="nosotros.html">Acerca de Nosotros</a></p>
+                                <p><a href="pdf/MENU DIGITAL (RGB).pdf">Nuestro Menú</a></p>
+                                <p><a href="eventos.html">Eventos y Promociones</a></p>
+                            </div>
+                            <div>
+                                <h6>Ofertas y Membresías</h6>
+                                <hr />
+                                <p><a href="membresias.html">Programa de Membresías</a></p>
+                                <p><a href="promociones.html">Promociones Exclusivas</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        © 2024 BULLDOG Bar. Todos los derechos reservados.
+                    </div>
+                </div>
+            </section>
+        </footer>
+        </div>
+</body>
+
+</html>

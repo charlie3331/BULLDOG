@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gestión de Productos</h1>
+
+    <!-- Tabla para mostrar productos -->
+    <h2>Lista de Productos</h2>
+    <table id="product-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Costo</th>
+                <th>Disponibilidad</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se llenarán los productos con fetch_products.php -->
+        </tbody>
+    </table>
+
+    <!-- Formulario para agregar productos -->
+    <h2>Agregar Producto</h2>
+    <form id="add-product-form" action="add_product.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="costo">Costo:</label>
+        <input type="number" step="0.01" id="costo" name="costo" required><br><br>
+
+        <label for="disponibilidad">Disponibilidad:</label>
+        <select id="disponibilidad" name="disponibilidad" required>
+            <option value="1">Disponible</option>
+            <option value="0">No Disponible</option>
+        </select><br><br>
+
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" required><br><br>
+
+        <button type="submit">Agregar Producto</button>
+    </form>
+
+    <script>
+        // Cargar los productos al cargar la página
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("fetch_products.php")
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.querySelector("#product-table tbody");
+                    tableBody.innerHTML = ""; // Limpiar contenido previo
+                    data.forEach(product => {
+                        const row = document.createElement("tr");
+                        row.innerHTML = `
+                            <td>${product.nombre}</td>
+                            <td>${product.costo}</td>
+                            <td>${product.disponibilidad ? "Disponible" : "No Disponible"}</td>
+                            <td>${product.color}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                });
+        });
+    </script>
+</body>
+</html>

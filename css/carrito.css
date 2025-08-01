@@ -1,0 +1,189 @@
+/* Sección del carrito */
+.carrito {
+    position: fixed;
+    top: 5%; /* Cambiado de 10% a 5% para acercarlo a la parte superior */
+    right: 10px;
+    width: 35%; /* Ajuste del ancho del carrito */
+    height: 70vh; /* Reducido de 80vh a 70vh para evitar que quede tan largo */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Header del carrito */
+.carrito .header-carrito {
+    background-color: #0044cc;  /* Azul de fondo */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.4rem;  /* Aumentar ligeramente el tamaño de la fuente */
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Icono de cerrar el carrito */
+.btn-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.btn-cerrar:hover {
+    color: #ff0000;  /* Cambia a rojo cuando se pasa el mouse */
+}
+
+/* Items del carrito */
+.carrito .carrito-items {
+    padding: 20px;
+    overflow-y: auto;
+    height: calc(80vh - 160px);  /* Altura dinámica para los items */
+}
+
+/* Item individual */
+.carrito .carrito-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 15px;
+    position: relative;
+}
+
+.carrito .carrito-item img {
+    margin-right: 20px;
+    width: 60px;  /* Tamaño más pequeño de la imagen */
+    height: 60px;
+    border-radius: 8px;  /* Bordes redondeados */
+}
+
+.carrito .carrito-item .carrito-item-titulo {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1rem;  /* Tamaño de texto moderado */
+}
+
+.carrito .carrito-item .carrito-item-precio {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #0044cc;
+}
+
+/* Botón de eliminar */
+.carrito .carrito-item .btn-eliminar {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: transparent;
+    color: #0044cc;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Estilo total del carrito */
+.carrito .carrito-total {
+    background-color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.carrito .carrito-total .fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.carrito .carrito-total .btn-pagar {
+    background-color: #0044cc;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.carrito .carrito-total .btn-pagar:hover {
+    background-color: #002a80;
+}
+
+/* Icono flotante del carrito */
+#icono-carrito {
+    position: fixed;
+    top: 20px;  /* Cambié la posición a la parte superior */
+    right: 20px;
+    background-color: #0044cc;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1010; /* Asegurarse que esté por encima del carrito */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+#icono-carrito:hover {
+    transform: scale(1.1);  /* Efecto de hover */
+}
+
+
+/* Responsividad */
+@media screen and (max-width: 850px) {
+    .carrito {
+        width: 90%;
+        bottom: 10px;
+    }
+}
+
+.descuento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.input-descuento {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn-aplicar-descuento {
+    padding: 8px 15px;
+    background-color: #1c31a5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-aplicar-descuento:hover {
+    background-color: #121866;
+}
+
+.mensaje-descuento {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #1c31a5;
+    text-align: center;
+}
+
